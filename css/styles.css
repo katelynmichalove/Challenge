@@ -28,6 +28,7 @@ h3 {
 /* Navigation Section */
 .top {
   background-color: #22367D;
+  position: fixed;
 }
 
 .nav {
@@ -117,7 +118,9 @@ h3 {
 }
 
 .bus-data {
-  position: relative;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
   top: 50%;
   width: 100%;
   margin-top: 0%;
@@ -131,24 +134,20 @@ h3 {
 }
 
 .map {
+  position: fixed;
+  z-index: 1;
   margin: none;
-  top: 19.7%;
+  top: 20%;
   width: 100%;
 }
 
 .map-section {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  top: 19.7%;
 }
 .status {
   position: absolute;
   top: 0%;
   width: 100%;
-}
-
-.map-icons {
-  position: absolute;
-  width: 60%;
-  top: 25%;
-  left: 26%;
 }
